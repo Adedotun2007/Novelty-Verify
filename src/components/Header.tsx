@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Shield } from "lucide-react";
 
@@ -6,11 +7,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Features", href: "#features" },
-    { name: "About Extension", href: "#about" },
-    { name: "Meet the Team", href: "#team" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Home", href: "/" },
+    { name: "Features", href: "/features" },
+    { name: "About Extension", href: "/about" },
+    { name: "Meet the Team", href: "/team" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -18,21 +20,21 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <Shield className="h-8 w-8 text-accent" />
             <span className="text-xl font-bold text-primary-foreground">Novelty Verify</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -61,14 +63,14 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-primary/20 animate-slide-in">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <Button variant="cta" className="mt-4 w-full font-semibold">
                 Download Extension
