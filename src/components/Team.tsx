@@ -23,7 +23,7 @@ const Team = () => {
     },
     {
       name: "James Thompson",
-      role: "VP of Engineering",
+      role: "Web Developer",
       bio: "20 years building scalable security platforms at Salesforce and Okta.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     }
