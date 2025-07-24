@@ -12,7 +12,7 @@ const Contact = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-emerald-900">
                 Get in Touch
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -78,14 +78,8 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <MapPin className="h-6 w-6 text-accent" />
-                      <div>
-                        <h3 className="font-semibold">Visit Us</h3>
-                        <p className="text-muted-foreground">
-                          123 Security Blvd<br />
-                          San Francisco, CA 94105
-                        </p>
-                      </div>
+                      
+                      
                     </div>
                   </CardContent>
                 </Card>
