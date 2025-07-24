@@ -7,21 +7,22 @@ const Pricing = () => {
     {
       name: "Free Version",
       price: "Free",
-      description: "Perfect for small teams getting started with cloud security monitoring",
+      description:
+        "Perfect for small teams getting started with cloud security monitoring",
       features: [
         "Monitor up to 5 cloud applications",
         "Basic activity tracking",
         "Email alerts",
         "7-day activity history",
-        "Community support"
+        "Community support",
       ],
       buttonText: "Download Free Version",
       buttonVariant: "outline" as const,
-      popular: false
+      popular: false,
     },
     {
-      name: "Pro Version", 
-      price: "$29/month per user",
+      name: "Pro Version",
+      price: "₦/month per user",
       description: "Advanced features for enterprise security teams",
       features: [
         "Unlimited cloud application monitoring",
@@ -31,12 +32,12 @@ const Pricing = () => {
         "Advanced reporting dashboard",
         "Role-based access controls",
         "API integrations",
-        "Priority support"
+        "Priority support",
       ],
       buttonText: "Download Pro Version",
       buttonVariant: "success" as const,
-      popular: true
-    }
+      popular: true,
+    },
   ];
 
   return (
