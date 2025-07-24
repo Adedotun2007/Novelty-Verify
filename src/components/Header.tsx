@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <Shield className="h-8 w-8 text-accent" />
+            <img src="/lovable-uploads/5ada4f09-3497-4bac-b721-a069cd8c5924.png" alt="Novelty Verify Logo" className="h-8 w-8" />
             <span className="text-xl font-bold text-primary-foreground">Novelty Verify</span>
           </Link>
 
