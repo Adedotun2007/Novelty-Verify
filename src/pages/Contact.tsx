@@ -5,10 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <div className="pt-16">
         <section className="py-20 bg-background">
@@ -53,10 +51,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Message</label>
-                    <Textarea 
-                      placeholder="Tell us about your security needs or ask any questions..."
-                      className="min-h-[120px]"
-                    />
+                    <Textarea placeholder="Tell us about your security needs or ask any questions..." className="min-h-[120px]" />
                   </div>
                   <Button variant="cta" className="w-full">
                     Send Message
@@ -72,7 +67,7 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-accent" />
                       <div>
                         <h3 className="font-semibold">Email Us</h3>
-                        <p className="text-muted-foreground">contact@noveltyverify.com</p>
+                        <p className="text-muted-foreground">novelityverify@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-4 mb-4">
@@ -115,8 +110,6 @@ const Contact = () => {
         </section>
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
