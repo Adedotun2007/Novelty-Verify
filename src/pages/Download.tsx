@@ -100,7 +100,7 @@ const DownloadPage = () => {
                   download
                 >
                   <Download className="mr-2 h-5 w-5" />
-                  Download NOW ShadowShield Extension
+                  Download Novelty Verify Extension
                   <Shield className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 </a>
               </Button>
