@@ -4,10 +4,12 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Download, Monitor, Shield, Cpu, Globe } from "lucide-react";
+
 const DownloadPage = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Header />
-      
+
       <section className="pt-24 pb-16 bg-gradient-to-br from-background to-secondary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
@@ -18,7 +20,9 @@ const DownloadPage = () => {
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Download Novelty Verify</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+                Download Novelty Verify
+              </h1>
               <p className="text-xl text-muted-foreground">
                 Your browser extension for cloud security monitoring
               </p>
@@ -33,7 +37,9 @@ const DownloadPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">ShadowShield monitors and flags potentially insecure cloud platforms being accessed via the browser. Perfect for IT teams and compliance officers who want peace of mind without heavy software.</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  ShadowShield monitors and flags potentially insecure cloud platforms being accessed via the browser. Perfect for IT teams and compliance officers who want peace of mind without heavy software.
+                </p>
               </CardContent>
             </Card>
 
@@ -50,29 +56,29 @@ const DownloadPage = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Operating System</h4>
                     <div className="space-y-1">
-                      <Badge variant="secondary">Windows 7,8, 10, 11</Badge>
+                      <Badge variant="secondary">Windows 7, 8, 10, 11</Badge>
                       <Badge variant="secondary">MacOS 10.14+</Badge>
-                      <Badge variant="secondary">Linux </Badge>
+                      <Badge variant="secondary">Linux</Badge>
                     </div>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Browser Support</h4>
                     <div className="space-y-1">
-                      <Badge variant="secondary">Chrome </Badge>
+                      <Badge variant="secondary">Chrome</Badge>
                       <Badge variant="secondary">Brave</Badge>
                       <Badge variant="secondary">Edge</Badge>
-                      <Badge variant="secondary">firefox</Badge>
+                      <Badge variant="secondary">Firefox</Badge>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t">
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Memory</h4>
                     <Badge variant="outline">Minimum 2 GB RAM</Badge>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Internet</h4>
                     <div className="flex items-center gap-2">
@@ -83,26 +89,32 @@ const DownloadPage = () => {
                 </div>
               </CardContent>
             </Card>
-            
-            <div className="text-center">
+
+            {/* Download Section */}
+            <div className="text-center mt-8">
               <Button asChild size="lg" className="group">
-                <a href="https://github.com/PTechSavvy/Extension/archive/refs/heads/main.zip" download>
+                <a
+                  href="https://github.com/PTechSavvy/Extension/archive/refs/heads/main.zip"
+                  download
+                >
                   <Download className="mr-2 h-5 w-5" />
                   Download NOW ShadowShield Extension
                   <Shield className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 </a>
               </Button>
-            </div>
-            
+
               <p className="text-sm text-muted-foreground mt-4">
                 Free to download • Instant setup • Enterprise-ready
               </p>
             </div>
+
           </div>
         </div>
       </section>
-      
+
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default DownloadPage;
