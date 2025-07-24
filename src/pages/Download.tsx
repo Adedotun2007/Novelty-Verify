@@ -84,16 +84,18 @@ const DownloadPage = () => {
               </CardContent>
             </Card>
 
-           <div className="text-center">
-              <a href="https://github.com/PTechSavvy/Extension/archive/refs/heads/main.zip" download>
-                <Button size="lg" className="group">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download ShadowShield Extension
-                  <Shield className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                </Button>
-              </a>
-            </div>
-              
+    <div className="text-center">
+  <Button asChild size="lg" className="group">
+    <a
+      href="https://github.com/PTechSavvy/Extension/archive/refs/heads/main.zip"
+      download
+    >
+      <Download className="mr-2 h-5 w-5" />
+      Download ShadowShield Extension
+      <Shield className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+    </a>
+  </Button>
+</div>
               <p className="text-sm text-muted-foreground mt-4">
                 Free to download • Instant setup • Enterprise-ready
               </p>
