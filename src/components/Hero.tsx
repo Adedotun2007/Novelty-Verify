@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-security.jpg";
 
 const Hero = () => {
@@ -28,10 +29,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="group">
-              <Download className="mr-2 h-5 w-5" />
-              Download the Web Extension
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="lg" className="group" asChild>
+              <Link to="/download">
+                <Download className="mr-2 h-5 w-5" />
+                Download the Web Extension
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
             
             <Button variant="outline" size="lg" className="border-secondary text-secondary bg-transparent hover:bg-secondary/10">
