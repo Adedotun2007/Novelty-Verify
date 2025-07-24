@@ -1,10 +1,8 @@
 import { Shield, Mail, Github, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -58,11 +56,7 @@ const Footer = () => {
               Get the latest security insights and product updates.
             </p>
             <div className="flex space-x-2">
-              <Input 
-                type="email" 
-                placeholder="Enter your email"
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-secondary-foreground"
-              />
+              <Input type="email" placeholder="Enter your email" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-secondary-foreground" />
               <Button variant="cta" size="sm">
                 <Mail className="h-4 w-4" />
               </Button>
@@ -72,9 +66,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-secondary-foreground text-sm">
-            © 2024 Novelty Verify. All rights reserved.
-          </p>
+          <p className="text-secondary-foreground text-sm">© 2025 Novelty Verify. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-secondary-foreground hover:text-accent transition-colors text-sm">Privacy Policy</a>
             <a href="#" className="text-secondary-foreground hover:text-accent transition-colors text-sm">Terms of Service</a>
@@ -82,8 +74,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

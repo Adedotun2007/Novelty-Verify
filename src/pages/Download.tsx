@@ -4,10 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Download, Monitor, Shield, Cpu, Globe } from "lucide-react";
-
 const DownloadPage = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       
       <section className="pt-24 pb-16 bg-gradient-to-br from-background to-secondary/20">
@@ -20,9 +18,7 @@ const DownloadPage = () => {
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-                Download ShadowShield
-              </h1>
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Download Novelty Verify</h1>
               <p className="text-xl text-muted-foreground">
                 Your browser extension for cloud security monitoring
               </p>
@@ -37,10 +33,7 @@ const DownloadPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
-                  ShadowShield monitors and flags potentially insecure cloud platforms being accessed via the browser. 
-                  Perfect for IT teams and compliance officers who want peace of mind without heavy software.
-                </p>
+                <p className="text-muted-foreground leading-relaxed">ShadowShield monitors and flags potentially insecure cloud platforms being accessed via the browser. Perfect for IT teams and compliance officers who want peace of mind without heavy software.</p>
               </CardContent>
             </Card>
 
@@ -57,19 +50,19 @@ const DownloadPage = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Operating System</h4>
                     <div className="space-y-1">
-                      <Badge variant="secondary">Windows 10+</Badge>
+                      <Badge variant="secondary">Windows 7,8, 10, 11</Badge>
                       <Badge variant="secondary">MacOS 10.14+</Badge>
-                      <Badge variant="secondary">Linux (Chromium-based)</Badge>
+                      <Badge variant="secondary">Linux </Badge>
                     </div>
                   </div>
                   
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Browser Support</h4>
                     <div className="space-y-1">
-                      <Badge variant="secondary">Chrome 90+</Badge>
+                      <Badge variant="secondary">Chrome </Badge>
                       <Badge variant="secondary">Brave</Badge>
                       <Badge variant="secondary">Edge</Badge>
-                      <Badge variant="secondary">Chromium-based browsers</Badge>
+                      <Badge variant="secondary">firefox</Badge>
                     </div>
                   </div>
                 </div>
@@ -108,8 +101,6 @@ const DownloadPage = () => {
       </section>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default DownloadPage;
