@@ -22,7 +22,7 @@ const Team = () => {
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "James Thompson",
+      name: "chucku emmanuel",
       role: "Web Developer",
       bio: "20 years building scalable security platforms at Salesforce and Okta.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
