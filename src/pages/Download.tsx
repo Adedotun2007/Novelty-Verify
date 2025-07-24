@@ -92,7 +92,7 @@ const DownloadPage = () => {
               </CardContent>
             </Card>
 
-            {/* ✅ Download Section Fixed */}
+            {/* ✅ Fixed download section */}
             <div className="text-center mt-8">
               <Button asChild size="lg" className="group">
                 <a
@@ -109,7 +109,9 @@ const DownloadPage = () => {
                 Free to download • Instant setup • Enterprise-ready
               </p>
             </div>
+            {/* ✅ THIS div closes max-w-4xl properly */}
           </div>
+          {/* ✅ THIS div closes container */}
         </div>
       </section>
 
