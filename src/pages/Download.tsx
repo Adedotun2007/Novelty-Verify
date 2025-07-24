@@ -83,14 +83,16 @@ const DownloadPage = () => {
                     <h4 className="font-semibold text-foreground mb-2">Internet</h4>
                     <div className="flex items-center gap-2">
                       <Globe className="h-4 w-4 text-primary" />
-                      <span className="text-sm text-muted-foreground">Required for real-time updates</span>
+                      <span className="text-sm text-muted-foreground">
+                        Required for real-time updates
+                      </span>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Download Section */}
+            {/* ✅ Download Section Fixed */}
             <div className="text-center mt-8">
               <Button asChild size="lg" className="group">
                 <a
@@ -107,7 +109,6 @@ const DownloadPage = () => {
                 Free to download • Instant setup • Enterprise-ready
               </p>
             </div>
-
           </div>
         </div>
       </section>
