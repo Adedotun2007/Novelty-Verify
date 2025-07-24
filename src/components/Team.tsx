@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Chen",
+      name: "Adeoba Adedotun",
       role: "CEO & Co-founder",
       bio: "Former Google Cloud Security lead with 15+ years in enterprise security solutions.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b547?w=400&h=400&fit=crop&crop=face"
