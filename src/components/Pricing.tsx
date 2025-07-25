@@ -22,7 +22,7 @@ const Pricing = () => {
     },
     {
       name: "Pro Version",
-      price: "₦/month per user",
+      price: "₦25,000/month per user",
       description: "Advanced features for enterprise security teams",
       features: [
         "Unlimited cloud application monitoring",
